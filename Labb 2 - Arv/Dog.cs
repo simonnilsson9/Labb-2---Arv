@@ -9,8 +9,8 @@ namespace Labb_2___Arv
     internal class Dog : Animals
     {
         public string Breed;
-
-        public Dog(int age, double weight, string name, string species, string colour, string breed): base(age, weight, name, species, colour)
+        
+        public Dog(int age = 0, double weight = 0, string name = "Okänt", string species = "Okänt", string colour = "Okänt", string breed = "Okänt"): base(age, weight, name, species, colour)
         {
             Breed = breed;
         }
@@ -30,7 +30,7 @@ namespace Labb_2___Arv
         }
         public void AnimalFeelings()
         {
-            Console.WriteLine("Djuret mår bra.");
+            Console.WriteLine($"Hunden {Name} mår bra.");
         }
     }
 }

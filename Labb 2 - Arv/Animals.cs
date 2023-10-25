@@ -14,7 +14,7 @@ namespace Labb_2___Arv
         public string Species;
         public string Colour;
         
-        public Animals(int age, double weight, string name, string species, string colour)
+        public Animals(int age = 0, double weight = 0, string name = "Okänt", string species = "Okänt", string colour = "Okänt")
         {            
             Age = age;
             Weight = weight;

@@ -10,7 +10,7 @@ namespace Labb_2___Arv
     {
         public string NickName;
 
-        public Cat(int age, double weight, string name, string species, string colour,string nickname): base(age,weight,name,species,colour)
+        public Cat(int age = 0, double weight = 0, string name = "Okänt", string species = "Okänt", string colour = "Okänt", string nickname = "Okänt"): base(age,weight,name,species,colour)
         {
             NickName = nickname;
         }

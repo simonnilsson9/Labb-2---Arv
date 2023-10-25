@@ -9,7 +9,7 @@ namespace Labb_2___Arv
     internal class Lion : Animals
     {
         public string Gender;
-        public Lion(int age, double weight, string name, string species, string colour, string gender) : base(age, weight, name, species, colour)
+        public Lion(int age = 0, double weight = 0, string name = "Okänt", string species = "Okänt", string colour = "Okänt", string gender = "Okänt") : base(age, weight, name, species, colour)
         {
             Gender = gender;
         }
