@@ -11,12 +11,15 @@
             Daschhund daschhund = new Daschhund(7,10,"Max","hund","vit","tax","tuggleksak");
             Labrador labrador = new Labrador(2,4,"Ozzy","hund","beige","labrador","hane");
 
-
-            dog.MakeSound();
-            cat.MakeSound();
-            lion.MakeSound();            
-            labrador.MakeSound();
-            daschhund.MakeSound();
+            Animals[] animals = {dog, cat, lion, daschhund, labrador};
+            foreach (Animals animal in animals)
+            {
+                Console.WriteLine();
+                animal.AnimalInfo();                
+                animal.MakeSound();
+                
+            }
+            
 
 
         }
